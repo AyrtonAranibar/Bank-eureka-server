@@ -7,9 +7,11 @@ spring:
 
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
   server:
     wait-time-in-ms-when-sync-empty: 0
     service-url:
-      defaultZone: http://eureka-server:8761/eureka
+      defaultZone: http://host.docker.internal:8761/eureka
+
+
